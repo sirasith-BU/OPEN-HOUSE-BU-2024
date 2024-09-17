@@ -1,0 +1,94 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .section-content {
+    padding: 60px 0;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  /* Sponsors Section */
+  .container.my-5 h2 {
+    color: #333;
+  }
+  
+  .sponsor img {
+    max-width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .sponsor p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Partners Section */
+  .section-content .card-alumni {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-content .card-alumni:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+  }
+  
+  .section-content .ratio {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .section-content .title-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 0 5px;
+  }
+  
+  .section-content .name-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .section-content .layout-name-text {
+    padding: 0 0 10px;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #212529;
+    color: #fff;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  footer a:hover {
+    color: #ffc107;
+    text-decoration: none;
+  }
+  
+  

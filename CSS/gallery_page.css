@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+  }
+  
+  h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .section-content {
+    padding: 50px 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #f0ad4e;
+  }
+  
+  /* Sponsors Section */
+  .card-alumni {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card-alumni:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .layout-image {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 50%;
+    object-fit: contain; /* ปรับให้ภาพอยู่ในกรอบโดยไม่บีบหรือครอบตัด */
+  }
+   
+  
+  .title-layout {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .title-text {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .name-layout {
+    padding-top: 5px;
+  }
+  
+  .name-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .ratio {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+  }
+  
+  .ratio img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  footer a {
+    color: #f0ad4e;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 767px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 0.9rem;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .title-text {
+      font-size: 1rem;
+    }
+  
+    .name-text {
+      font-size: 0.9rem;
+    }
+  }
+  
