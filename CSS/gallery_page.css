@@ -1,6 +1,5 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f8f9fa;
   }
@@ -9,6 +8,7 @@ body {
     font-weight: bold;
     font-size: 2rem;
     color: #333;
+    padding-top: 30px;
   }
   
   .section-content {
@@ -22,7 +22,6 @@ body {
   
   .navbar-brand {
     font-size: 1.5rem;
-    font-weight: bold;
   }
   
   .navbar-nav .nav-link {
@@ -30,37 +29,53 @@ body {
     padding-left: 15px;
     padding-right: 15px;
   }
-  
-  .navbar-nav .nav-link:hover {
-    color: #f0ad4e;
+
+  .container-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* กำหนดให้มี 3 คอลัมน์ต่อแถว */
+    gap: 20px;
+    justify-items: center;
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของ container */
+    max-height: 500;
+    margin: 0 auto; /* จัด container ให้อยู่กึ่งกลาง */
   }
   
-  /* Sponsors Section */
-  .card-alumni {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .card-alumni:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  }
-  
-  .layout-image {
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .card-image {
+  .gallery-item {
     width: 100%;
-    height: 50%;
-    object-fit: contain; /* ปรับให้ภาพอยู่ในกรอบโดยไม่บีบหรือครอบตัด */
+    max-width: 400px;
+    height: 300px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.2);
+  }
+  
+  /* ป้องกันการบีบหรือยืดรูปภาพ */
+  .gallery-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* ให้ภาพแสดงในกรอบที่ถูกต้องโดยไม่บิดเบือน */
+    border-radius: 8px;
+  }
+  
+  /* สำหรับขนาดหน้าจอเล็ก ปรับ layout ให้เป็น 2 คอลัมน์ */
+  @media (max-width: 768px) {
+    .container-certificates {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* สำหรับขนาดหน้าจอเล็กมาก ปรับ layout ให้เป็น 1 คอลัมน์ */
+  @media (max-width: 480px) {
+    .container-certificates {
+      grid-template-columns: 1fr;
+    }
   }
    
-  
   .title-layout {
     padding: 15px;
     text-align: center;
@@ -96,27 +111,6 @@ body {
     object-fit: cover;
   }
   
-  /* Footer */
-  footer {
-    background-color: #343a40;
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  footer a {
-    color: #f0ad4e;
-    text-decoration: none;
-  }
-  
-  footer a:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
-  
-  footer p {
-    margin: 0;
-    font-size: 0.9rem;
-  }
   
   /* Responsive Styles */
   @media (max-width: 767px) {
