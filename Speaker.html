@@ -17,6 +17,36 @@
       height: 250px;
       border-radius: 50%;
       object-fit: cover;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 5px solid #ff5252;
+      /* กรอบสีแดง */
+      padding: 5px;
+      /* ระยะห่างระหว่างกรอบกับรูปภาพ */
+      background-color: #fff;
+      /* พื้นหลังขาวเพื่อให้กรอบเด่นขึ้น */
+    }
+
+    .speaker:hover {
+      transform: translateY(-10px);
+      /* ขยับขึ้นเมื่อวางเมาส์ */
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+      /* เพิ่มเงาเมื่อโฮเวอร์ */
+    }
+
+    .speaker-card {
+      border: 2px solid #ff5252;
+      /* กรอบสีแดง */
+      border-radius: 10px;
+      /* มุมกรอบโค้ง */
+      padding: 20px;
+      /* ระยะห่างภายใน */
+      background-color: #fff;
+      /* พื้นหลังขาว */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      /* เงา */
+      margin-bottom: 30px;
+      /* ระยะห่างระหว่างผู้พูด */
     }
   </style>
 </head>
@@ -76,14 +106,35 @@
   </nav>
 
   <div class="container my-5">
-    <div class="row">
+    <h1 class="text-center mb-5">Meet Our Speakers</h1>
+    <div class="speaker-card row">
       <div class="col-lg-4 text-center">
-        <img src="images/Yim.png" alt="Speaker Photo" class="speaker">
+        <img src="images/Yim.jpg" alt="Speaker Photo" class="speaker">
       </div>
       <div class="col-lg-8">
         <h2 class="mb-3">Phawin Thongsen</h2>
         <h4 class="text-dark">Speaker - ITI Program</h4>
-        <p>Hello, I'm Phawin, one of the speakers at BU Open House 2024, where I will introduce various programs, career
+        <p>Hello, I'm Yim, one of the speakers at BU Open House 2024, where I will introduce various programs, career
+          opportunities, and skills development in the Faculty of Information Technology and Innovation.</p>
+        <ul class="list-unstyled">
+          <li><strong>Position:</strong> Staff at BU Open House 2024</li>
+          <li><strong>Specialties:</strong> Python, HTML, JavaScript, GitHub, VSCode, Canva</li>
+          <li><strong>Topics:</strong> IT Career Paths, Coding Workshops, Curriculum Details</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container my-5">
+    <div class="speaker-card row">
+      <div class="col-lg-4 text-center">
+        <img src="images/Chaky.jpg" alt="Speaker Photo" class="speaker">
+      </div>
+      <div class="col-lg-8">
+        <h2 class="mb-3">Sirasith Chaky</h2>
+        <h4 class="text-dark">Speaker - ITI Program</h4>
+        <p>Hello, I'm Chaky, one of the speakers at BU Open House 2024, where I will introduce various programs, career
           opportunities, and skills development in the Faculty of Information Technology and Innovation.</p>
         <ul class="list-unstyled">
           <li><strong>Position:</strong> Staff at BU Open House 2024</li>
@@ -95,15 +146,15 @@
   </div>
 
   <div class="container my-5">
-    <div class="row">
+    <div class="speaker-card row">
       <div class="col-lg-4 text-center">
-        <img src="images/Chaky.png" alt="Speaker Photo" class="speaker">
+        <img src="images/Premier.jpg" alt="Speaker Photo" class="speaker">
       </div>
       <div class="col-lg-8">
-        <h2 class="mb-3">Sirasith Chaky</h2>
+        <h2 class="mb-3">Tinnaphop Saelim</h2>
         <h4 class="text-dark">Speaker - ITI Program</h4>
-        <p>Hello, I'm Chaky, one of the speakers at BU Open House 2024, where I will introduce various programs, career
-          opportunities, and skills development in the Faculty of Information Technology and Innovation.</p>
+        <p>Hello, I'm Premier, one of the speakers at BU Open House 2024, where I will introduce various programs,
+          career opportunities, and skills development in the Faculty of Information Technology and Innovation.</p>
         <ul class="list-unstyled">
           <li><strong>Position:</strong> Staff at BU Open House 2024</li>
           <li><strong>Specialties:</strong> Python, HTML, JavaScript, GitHub, VSCode, Canva</li>
