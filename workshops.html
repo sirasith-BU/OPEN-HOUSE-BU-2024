@@ -70,8 +70,8 @@
     <div class="container mt-5">
         <!-- header -->
         <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1 class="display-1 fw-bold">Workshops and Activities</h1>
+            <div class="col-sm-12">
+                <h1 class="display-1 fw-bold text-center">Workshops and Activities</h1>
                 <hr>
             </div>
         </div>
@@ -80,13 +80,13 @@
         <div class="row">
             <!-- Activities 1 -->
             <div class="col-sm-6">
-                <div class="card p-2">
+                <div class="card p-2 bg-dark text-light">
                     <div class="layout-card-alumni d-flex justify-content-center">
                         <div class="card-alumni">
                             <div class="layout-image">
-                                <img class="card-image h-100 w-100"
+                                <img class="card-image h-100 w-100" style="border-radius: 5px;"
                                     src="https://contents.bu.ac.th/contents/images/faculty-activities/3e348110-f5d2-4acb-80ad-d5be2c1caef3.webp"
-                                    alt="..." />
+                                    alt="สัมมนาฟรี กับตัวจริงด้าน Data Science โดย คุณณัฐมน จำนงค์" />
                             </div>
                             <!-- Title -->
                             <div class="title-layout">
@@ -120,13 +120,13 @@
             </div>
             <!-- Activities 2 -->
             <div class="col-sm-6">
-                <div class="card p-2">
+                <div class="card p-2 bg-dark text-light">
                     <div class="layout-card-alumni d-flex justify-content-center">
                         <div class="card-alumni">
                             <div class="layout-image">
-                                <img class="card-image h-100 w-100"
+                                <img class="card-image h-100 w-100" style="border-radius: 5px;"
                                     src="https://contents.bu.ac.th/contents/images/faculty-activities/060728b2-4294-40cc-87dd-5998ce8152c2.webp"
-                                    alt="..." />
+                                    alt='โครงการ "BAM x BU Unicorn Battle"' />
                             </div>
                             <!-- Title -->
                             <div class="title-layout">
@@ -158,13 +158,13 @@
             </div>
             <!-- Activities 3 -->
             <div class="col-sm-6 my-3">
-                <div class="card p-2">
+                <div class="card p-2 bg-dark text-light">
                     <div class="layout-card-alumni d-flex justify-content-center">
                         <div class="card-alumni">
                             <div class="layout-image">
-                                <img class="card-image h-100 w-100"
+                                <img class="card-image h-100 w-100" style="border-radius: 5px;"
                                     src="https://contents.bu.ac.th/contents/images/faculty-activities/35c1a521-87ad-42e7-852c-e70cff3c7607.webp"
-                                    alt="..." />
+                                    alt='โครงการ "Cyber Warier Pathway Cybersecurity"' />
                             </div>
                             <!-- Title -->
                             <div class="title-layout">
@@ -196,11 +196,11 @@
             </div>
             <!-- Activities 4 -->
             <div class="col-sm-6 my-3">
-                <div class="card p-2">
+                <div class="card p-2 bg-dark text-light">
                     <div class="layout-card-alumni d-flex justify-content-center">
                         <div class="card-alumni">
                             <div class="layout-image">
-                                <img class="card-image h-100 w-100"
+                                <img class="card-image h-100 w-100" style="border-radius: 5px;"
                                     src="https://contents.bu.ac.th/contents/images/faculty-activities/6625c054-026e-415d-a87b-953228f4a61a.webp"
                                     alt="..." />
                             </div>
@@ -236,11 +236,11 @@
             </div>
             <!-- Activities 5 -->
             <div class="col-sm-6 my-3">
-                <div class="card p-2">
+                <div class="card p-2 bg-dark text-light">
                     <div class="layout-card-alumni d-flex justify-content-center">
                         <div class="card-alumni">
                             <div class="layout-image">
-                                <img class="card-image h-100 w-100"
+                                <img class="card-image h-100 w-100" style="border-radius: 5px;"
                                     src="https://contents.bu.ac.th/contents/images/faculty-activities/28d9ff42-34c1-4307-9866-2a5648ffff0b.webp"
                                     alt="..." />
                             </div>
@@ -277,7 +277,7 @@
                     <div class="col-md-6">
                         <h2 class="text-center">Sign Up for a Workshop</h2>
                         <form>
-                            <div class="form-group">
+                            <div class="form-label">
                                 <label for="fullName">Full Name</label>
                                 <input type="text" class="form-control" id="fullName"
                                     placeholder="Enter your full name" />
@@ -288,22 +288,23 @@
                             </div>
                             <div class="form-group">
                                 <label for="workshopSelect">Select Workshop</label>
-                                <select class="form-control" id="workshopSelect">
+                                <select class="form-select" id="workshopSelect">
+                                    <option selected disabled hidden>Select Workshops...</option>
                                     <option>
-                                        Activities 1: สัมมนาฟรี กับตัวจริงด้าน Data Science โดย
+                                        สัมมนาฟรี กับตัวจริงด้าน Data Science โดย
                                         คุณณัฐมน จำนงค์
                                     </option>
                                     <option>
-                                        Activities 2: โครงการ "BAM x BU Unicorn Battle"
+                                        โครงการ "BAM x BU Unicorn Battle"
                                     </option>
                                     <option>
-                                        Activities 3: โครงการ "Cyber Warier Pathway Cybersecurity"
+                                        โครงการ "Cyber Warier Pathway Cybersecurity"
                                     </option>
                                     <option>
-                                        Activities 4: มหกรรมวิทยาศาสตร์และเทคโนโลยีแห่งชาติ
+                                        มหกรรมวิทยาศาสตร์และเทคโนโลยีแห่งชาติ
                                     </option>
                                     <option>
-                                        Activities 5: Code; Without Barriers Meetup Bangkok Ias
+                                        Code; Without Barriers Meetup Bangkok Ias
                                         Microsoft
                                     </option>
                                 </select>
