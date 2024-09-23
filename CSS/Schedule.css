@@ -1,0 +1,13 @@
+.sfooter {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+@media (min-width: 922px) {
+  .sfooter {
+    position: fixed;
+    bottom: 0;
+  }
+}
